@@ -64,16 +64,8 @@ cd form/form
 npm run dev
 ```
 
-6. Open the app (usually http://localhost:5173) and test the form.
+6. Open the app and test the form.
 
-
-## Security notes
-
-- Do not store plaintext passwords. This project hashes passwords server-side with bcrypt before inserting them into the database.
-- For production, prefer moving hashing and any other non-deterministic or long-running work into a Convex `action` (actions allow timers and side effects). The action can then call a mutation (internal mutation) to write to the DB.
-- Keep any secrets out of client-side env variables — variables prefixed with `VITE_` are embedded into the browser bundle and are public.
-
----
 
 ## Useful commands
 
